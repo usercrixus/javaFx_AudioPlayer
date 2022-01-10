@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="supra.player.controler.MusicListControler">
+   <children>
+      <TableView fx:id="TableViewFiles" focusTraversable="false" onDragDropped="#OnDragDroppedAddFile" onDragOver="#OnDragAcceptFile" onMouseClicked="#launchMusic">
+        <columns>
+          <TableColumn fx:id="tableColumnTitle" maxWidth="8000.0" text="Title" />
+          <TableColumn fx:id="tableColumnDuration" maxWidth="2000.0" prefWidth="20.0" text="Duration" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</StackPane>
